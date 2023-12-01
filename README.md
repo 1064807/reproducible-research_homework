@@ -12,6 +12,8 @@ The random walks are depicted in two plots plotted side-by-side. The plots depic
 
 Random seeds are used in computational processes that involve randomness to ensure reproducibility. Also known as a seed state, or just seed, a random seed is a number (or vector) used to initialize a pseudorandom number. A random seed specifies the start point when a computer generates a random number sequence (Henkemans & Lee, 2001).
 
+https://github.com/sathvikakrishnan/reproducible-research_homework/blob/94c2680173d2108e582beaa46f039f21c000676e/comparison_1.png
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points (plus an optional bonus question worth 10 extra points). First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
