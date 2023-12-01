@@ -31,17 +31,27 @@ By using a linear regression, I extracted these values from the summary table:
 
    This had a p value of less than 6.44 &times; 10<sup>-10</sup>. As this p-value is significatly less than any conventional significance level (e.g., 0.05 or 0.01), it can be concluded that there is very strong evidence against the null hypothesis so it is statistically significant.
 
-In [Table 2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4093846/table/T2/?report=objectonly) of [Cui, Schlub and Holmes' 2014 paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4093846/), they report the allometric exponent for dsDNA (with 95% CI) to be 1.52 (1.16–1.87) and the scaling factor to be 1,182 (246–5,675). In comparison to my values, it appears that their exponent is similar to my scaling factor and their scaling factors is similar to my exponent. So it appears that I have interpreted what they claim is the scaling factor to be the exponent and visa versa.
+In [Table 2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4093846/table/T2/?report=objectonly) of [Cui, Schlub and Holmes' 2014 paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4093846/), they report the allometric exponent for dsDNA (with 95% CI) to be 1.52 (1.16–1.87) and the scaling factor to be 1,182 (246–5,675). In comparison to my values, it appears that their exponent is similar to my scaling factor and their scaling factors is similar to my exponent. So it appears that I have interpreted what the scaling factor to be the exponent and visa versa.
+
+#Renaming the columns to make them human readable
 
 dsDNA_viruses <- dsDNA_viruses %>%
 
-  rename(genome_length = Genome.length..kb., virion_vol = Virion.volume..nm.nm.nm.) #renaming the columns to make it readable
+  rename(genome_length = Genome.length..kb., virion_vol = Virion.volume..nm.nm.nm.)
   
-dsDNA_viruses
+#Contents of the dsDNA_viruses data frame, showing the result of the column renaming
+
+dsDNA_viruses 
+
+#Fits a linear regression model using the lm function
 
 model_linear <- lm(log(virion_vol) ~ log(genome_length), data = dsDNA_viruses)
 
+#Summary of the linear regression model
+
 summary(model_linear)
+
+#Scatter plot which includes a shaded confidence interval. The line color is set to "blue", and the line width is set to 0.5.
 
 ggplot(dsDNA_viruses, aes(x = log(genome_length), y = log(virion_vol)))+
 
@@ -49,10 +59,21 @@ ggplot(dsDNA_viruses, aes(x = log(genome_length), y = log(virion_vol)))+
   
   geom_smooth(method = "lm", se = TRUE, color = "blue", linewidth = 0.5) +
   
-  labs(x = "log[Genome length (kb)]", y = "log[Virion volume (nn3)]")
-
+  labs(x = "log[Genome length (kb)]", y = "log[Virion volume (nn3)]") +
+  
+  theme_minimal()+ 
+  
+  theme(plot.background = element_rect(fill = "white", color = "grey", linewidth = 1),
+   axis.line = element_line(color = "grey")) 
+   
+#Ensures that the axis are visible and the background is white with grid lines present
 
 ![Reproduced Graph](https://github.com/sathvikakrishnan/reproducible-research_homework/blob/2a7a8cebf1e598f38be903f534cf83a68e8ebd35/reproduced_plot_log.png)
+
+The estimated volume of a 300kb dsDNA virus is 6697006nm<sup>3</sup>. To calculate this, I used _V = β L<sup>α</sup>_ where
+
+α =  1.5152 
+β = 1181.807  
 
 ## Instructions
 
