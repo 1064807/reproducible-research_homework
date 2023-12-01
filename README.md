@@ -15,6 +15,12 @@ Random seeds are used in computational processes that involve randomness to ensu
 ![Comparison of a script for reproducible simulation of Brownian motion and a scipt for simulating a random walk](https://github.com/sathvikakrishnan/reproducible-research_homework/blob/2bd4f6e93ccf30821287c3f49a0e688d0c4e56c5/comparison_2.png) 
 ![Comparison of a script for reproducible simulation of Brownian motion and a scipt for simulating a random walk](https://github.com/sathvikakrishnan/reproducible-research_homework/blob/94c2680173d2108e582beaa46f039f21c000676e/comparison_1.png)
 
+__*Question 5*__
+Number of Rows: 33 
+Number of Columns: 13
+
+As _V = β L<sup>α</sup>_, taking a logarithm of both sides will linearize the relationship. Therefore, the equation takes the form log(V)=log(β)+αlog(L)
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points (plus an optional bonus question worth 10 extra points). First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
