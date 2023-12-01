@@ -34,15 +34,25 @@ By using a linear regression, I extracted these values from the summary table:
 In [Table 2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4093846/table/T2/?report=objectonly) of [Cui, Schlub and Holmes' 2014 paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4093846/), they report the allometric exponent for dsDNA (with 95% CI) to be 1.52 (1.16–1.87) and the scaling factor to be 1,182 (246–5,675). In comparison to my values, it appears that their exponent is similar to my scaling factor and their scaling factors is similar to my exponent. So it appears that I have interpreted what they claim is the scaling factor to be the exponent and visa versa.
 
 dsDNA_viruses <- dsDNA_viruses %>%
-  rename(genome_length = Genome.length..kb., virion_vol = Virion.volume..nm.nm.nm.)
+
+  rename(genome_length = Genome.length..kb., virion_vol = Virion.volume..nm.nm.nm.) #renaming the columns to make it readable
+  
 dsDNA_viruses
+
 model_linear <- lm(log(virion_vol) ~ log(genome_length), data = dsDNA_viruses)
+
 summary(model_linear)
+
 ggplot(dsDNA_viruses, aes(x = log(genome_length), y = log(virion_vol)))+
+
   geom_point() +
+  
   geom_smooth(method = "lm", se = TRUE, color = "blue", linewidth = 0.5) +
+  
   labs(x = "log[Genome length (kb)]", y = "log[Virion volume (nn3)]")
 
+
+![Reproduced Graph](https://github.com/sathvikakrishnan/reproducible-research_homework/blob/2a7a8cebf1e598f38be903f534cf83a68e8ebd35/reproduced_plot_log.png)
 
 ## Instructions
 
