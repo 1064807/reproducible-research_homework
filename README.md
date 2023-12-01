@@ -16,10 +16,22 @@ Random seeds are used in computational processes that involve randomness to ensu
 ![Comparison of a script for reproducible simulation of Brownian motion and a scipt for simulating a random walk](https://github.com/sathvikakrishnan/reproducible-research_homework/blob/94c2680173d2108e582beaa46f039f21c000676e/comparison_1.png)
 
 __*Question 5*__
+
 Number of Rows: 33 
 Number of Columns: 13
 
-As _V = β L<sup>α</sup>_, taking a logarithm of both sides will linearize the relationship. Therefore, the equation takes the form log(V)=log(β)+αlog(L)
+As _V = β L<sup>α</sup>_, taking a logarithm of both sides will linearize the relationship. Therefore, the equation takes the form _log(V)=log(β)+αlog(L)_
+By using a linear regression, I extracted these values from the summary table:
+
+α (the exponent) = 1181.807
+
+   This had a p value of less than 2.28 &times; 10<sup>-10</sup>. As this p-value is significatly less than any conventional significance level (e.g., 0.05 or 0.01), it can be concluded that there is very strong evidence against the null hypothesis so it is statistically significant.
+   
+β (the scaling factor) = 1.5152
+
+   This had a p value of less than 6.44 &times; 10<sup>-10</sup>. As this p-value is significatly less than any conventional significance level (e.g., 0.05 or 0.01), it can be concluded that there is very strong evidence against the null hypothesis so it is statistically significant.
+
+In [Table 2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4093846/table/T2/?report=objectonly) of [Cui, Schlub and Holmes' 2014 paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4093846/), they report the allometric exponent for dsDNA (with 95% CI) to be 1.52 (1.16–1.87) and the scaling factor to be 1,182 (246–5,675). Im comparison to my values, it appears that their exponent is similar to my scaling factor and their scaling factors is similar to my exponent.
 
 ## Instructions
 
