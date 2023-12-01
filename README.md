@@ -1,6 +1,13 @@
 # Reproducible research: version control and R
 
-\# INSERT ANSWERS HERE #
+## Answers
+
+__*Question 4*__
+![Two Random Walks](https://github.com/sathvikakrishnan/logistic_growth/blob/ca91c0a223d46725fac2fe7159bf8e7706df4835/Random_Walk_Plot.png)
+
+The random walks are depicted in two plots plotted side-by-side. The plots depict the paths of random walks over 500 steps. Despite both walks starting at 0,0, they have indivdiual trajectories with random angles due to the stochastic nature of Brownian motion in random walks. The directions are uncorrelated (i.e. the direction of movement is  independent of the previous directions moved) and unbiased (i.e. the direction of motion is random). As a result of these two features, the trajectories seem unpredictable and each path is unique. The colour variation along the paths represents the progression of time in both walks. Earlier steps are darker blue and later steps are lighter blue as indicated by the colour gradient key.
+
+Random seeds are used in computational processes that involve randomness to ensure reproducibility. Also known as a seed state, or just seed, a random seed is a number (or vector) used to initialize a pseudorandom number. A random seed specifies the start point when a computer generates a random number sequence (Henkemans & Lee, 2001).
 
 ## Instructions
 
