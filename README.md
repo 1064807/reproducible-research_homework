@@ -4,7 +4,7 @@
 
 __*Question 1-3:*__
 
-Here is the link to my logistic_growth repo 🔗 : 
+Here is the link to my logistic_growth repo 🔗 : https://github.com/1064807/logistic_growth.git
 
 __*Question 4:*__
 ![Two Random Walks](https://github.com/sathvikakrishnan/logistic_growth/blob/ca91c0a223d46725fac2fe7159bf8e7706df4835/Random_Walk_Plot.png)
