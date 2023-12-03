@@ -7,7 +7,7 @@ __*Question 1-3:*__
 Here is the link to my logistic_growth repo 🔗 : https://github.com/1064807/logistic_growth.git
 
 __*Question 4:*__
-![Two Random Walks](https://github.com/sathvikakrishnan/logistic_growth/blob/ca91c0a223d46725fac2fe7159bf8e7706df4835/Random_Walk_Plot.png)
+![Two Random Walks](https://github.com/1064807/logistic_growth/blob/bb38f45d8c71256daa20887da77d580abfc4a790/Random_Walk_Plot.png)
 
 The random walks are depicted in two plots plotted side-by-side. The plots depict the paths of random walks over 500 steps. Despite both walks starting at 0,0, they have indivdiual trajectories with random angles due to the stochastic nature of Brownian motion in random walks. The directions are uncorrelated (i.e. the direction of movement is  independent of the previous directions moved) and unbiased (i.e. the direction of motion is random). As a result of these two features, the trajectories seem unpredictable and each path is unique (Codling et al 2008). The colour variation along the paths represents the progression of time in both walks. Earlier steps are darker blue and later steps are lighter blue as indicated by the colour gradient key.
 
