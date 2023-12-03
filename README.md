@@ -74,7 +74,7 @@ ggplot(dsDNA_viruses, aes(x = log(genome_length), y = log(virion_vol)))+
    ```
 </pre>
 
-![Reproduced Graph](https://github.com/sathvikakrishnan/reproducible-research_homework/blob/2a7a8cebf1e598f38be903f534cf83a68e8ebd35/reproduced_plot_log.png)
+![Reproduced Graph](https://github.com/1064807/reproducible-research_homework/blob/c231ac531c8baf67dcd1b6819c9f91a10d65bbce/reproduced_plot_log.png)
 
 The estimated volume of a 300kb dsDNA virus is __6697006nm<sup>3</sup>__. To calculate this, I used _V = β L<sup>α</sup>_ where
 
