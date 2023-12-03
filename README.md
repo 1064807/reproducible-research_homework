@@ -75,6 +75,11 @@ The estimated volume of a 300kb dsDNA virus is 6697006nm<sup>3</sup>. To calcula
 α =  1.5152 
 β = 1181.807  
 
+__*Bonus Question*__
+Replicability assesses the consistency in measurements conducted by a single individual within identical conditions (i.e. the ability to generate consistent results across different studies or experiments aiming to answer the same scientific question), whereas reproducibility gauges the ability to replicate an entire study or experiment in its entirety (i.e. the ability to re-run the same analysis on the same data and obtain the same results). Replicability validates the generalisability and robustness of scientific findings. If a study is replicable, then the results of the original study are reliable. Reproducability, on the other hand, is vital ritical for validating results and ensuring that findings are not dependent on specific conditions. If a study is reproducable, then the analysis was conducted fairly and correctly.
+
+
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points (plus an optional bonus question worth 10 extra points). First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
