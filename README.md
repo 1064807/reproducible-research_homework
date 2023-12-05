@@ -13,6 +13,8 @@ The random walks are depicted in two plots plotted side-by-side. The plots depic
 
 Random seeds are used in computational processes that involve randomness to ensure reproducibility. Also known as a seed state, or just seed, a random seed is a number (or vector) used to initialize a pseudorandom number. A random seed specifies the start point when a computer generates a random number sequence.
 
+Here is the edited script for the generation of a reproducible simulation of Brownian motion: https://github.com/1064807/reproducible-research_homework/blob/e52736fbf731f6e46ecc2ec76a7e0cca73f7dc67/question-4-code/random_walk.R
+
 ![Comparison of a script for reproducible simulation of Brownian motion and a scipt for simulating a random walk](https://github.com/1064807/reproducible-research_homework/blob/dcdf3c097c20399d773f5498a7442cfca5017151/comparison_2.png) 
 ![Comparison of a script for reproducible simulation of Brownian motion and a scipt for simulating a random walk](https://github.com/1064807/reproducible-research_homework/blob/05b5083c18dece79c5d7bf63dcc0c1de3b2b9aa6/comparison_1.png)
 
@@ -23,6 +25,7 @@ __Number of Rows: 33__
 __Number of Columns: 13__
 
 As _V = β L<sup>α</sup>_, taking a logarithm of both sides will linearize the relationship. Therefore, the equation takes the form _log(V)=log(β)+αlog(L)_
+
 By using a linear regression, I extracted these values from the summary table:
 
 __α (the exponent) = 1181.807__
@@ -82,6 +85,7 @@ _α =  1.5152
 β = 1181.807_  
 
 __*Bonus Question:*__
+
 _Replicability vs Reproducability:_
 Replicability assesses the consistency in measurements conducted by a single individual within identical conditions (i.e. the ability to generate consistent results across different studies or experiments aiming to answer the same scientific question), whereas reproducibility gauges the ability to replicate an entire study or experiment in its entirety (i.e. the ability to re-run the same analysis on the same data and obtain the same results). Replicability validates the generalisability and robustness of scientific findings. If a study is replicable, then the results of the original study are reliable. Reproducability, on the other hand, is vital ritical for validating results and ensuring that findings are not dependent on specific conditions. If a study is reproducable, then the analysis was conducted fairly and correctly (Plesser 2017).
 
