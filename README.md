@@ -15,6 +15,8 @@ Random seeds are used in computational processes that involve randomness to ensu
 
 Here is the edited script for the generation of a reproducible simulation of Brownian motion: https://github.com/1064807/reproducible-research_homework/blob/e52736fbf731f6e46ecc2ec76a7e0cca73f7dc67/question-4-code/random_walk.R
 
+Here is a comparison of the script for reproducible simulation of Brownian motion and the script for simulating a random walk.
+
 ![Comparison of a script for reproducible simulation of Brownian motion and a scipt for simulating a random walk](https://github.com/1064807/reproducible-research_homework/blob/dcdf3c097c20399d773f5498a7442cfca5017151/comparison_2.png) 
 ![Comparison of a script for reproducible simulation of Brownian motion and a scipt for simulating a random walk](https://github.com/1064807/reproducible-research_homework/blob/05b5083c18dece79c5d7bf63dcc0c1de3b2b9aa6/comparison_1.png)
 
